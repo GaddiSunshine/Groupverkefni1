@@ -1,0 +1,28 @@
+footer {
+    background-color: #00b7ff;
+    padding: 20px 0;
+    
+}
+.list__row {
+    display: flex;
+    justify-content: space-around;
+    font-family: "helvetica";
+    max-width: 1200px;
+}
+li {
+    list-style: none; 
+    color: #fffcf2;
+    line-height: 2em;  
+    font-size:  0.75em;
+
+  }
+.list__title {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #000000;
+    font-size: 1em;
+}
+.trademark {
+    margin-top: 10px;
+    text-align: center;
+}
