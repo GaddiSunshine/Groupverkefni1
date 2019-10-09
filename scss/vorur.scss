@@ -1,8 +1,14 @@
+@mixin rounded{
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
 .vara{
     display: flex;
     
     &__image{
         max-width: 33.33%;
+        
     }
     
     &__innihald{
@@ -24,9 +30,20 @@
 
     &__magn{
         display: flex;
-        // flex-direction: column;
+        
     }
-    
+    &__fjoldi--input{
+        @include rounded;
+        padding: 10px;
+        width: 20%;
+    }
+    &__takki{
+        @include rounded;
+        padding: 10px;
+        &--karfa{
+            max-height: 12px;
+        }
+    }
 
 }
 
