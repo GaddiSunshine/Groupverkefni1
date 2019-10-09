@@ -3,16 +3,17 @@
   "version": "1.0.0",
   "description": "hópverkefni",
   "main": "index.js",
-  "dependencies": {
-    "node-sass": "^4.12.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.26.7"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "browser-sync": "browser-sync start --server --files index.html styles.css",
-    "sass": "node-sass styles.scss styles.css"
+    "sass": "node-sass styles.scss styles.css",
+    "sass-watch": "node-sass --source-map-embed --watch styles.scss --recursive styles.css",
+    "dev": "npm-run-all --parallel sass sass-watch browser-sync"
+    
   },
   "repository": {
     "type": "git",
