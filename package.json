@@ -1,0 +1,27 @@
+{
+  "name": "groupverkefni1",
+  "version": "1.0.0",
+  "description": "hópverkefni",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "browser-sync": "browser-sync start --server --files index.html styles.css",
+    "sass": "node-sass styles.scss styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GaddiSunshine/Groupverkefni1.git"
+  },
+  "author": "Hallur, Heiða og Garðar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GaddiSunshine/Groupverkefni1/issues"
+  },
+  "homepage": "https://github.com/GaddiSunshine/Groupverkefni1#readme"
+}
