@@ -1,4 +1,11 @@
 
+Til að setja upp...
+npm install browser-sync
+npm install node-sass
+npm install npm-run-all
+npm install stylelint
+npm install stylelint-config-primer
+
 # Hópverkefni 1
 
 Verkefnið felst í því að smíða vef eftir forskrift.
