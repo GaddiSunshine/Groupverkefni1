@@ -1,0 +1,32 @@
+.vara{
+    display: flex;
+    
+    &__image{
+        max-width: 33.33%;
+    }
+    
+    &__innihald{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    &__heiti{
+
+        margin-bottom: 10px;
+    }
+
+    &__verd{
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    &__magn{
+        display: flex;
+        // flex-direction: column;
+    }
+    
+
+}
+
