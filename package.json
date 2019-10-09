@@ -5,15 +5,18 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "browser-sync": "^2.26.7"
+    "browser-sync": "^2.26.7",
+    "stylelint": "^11.0.0",
+    "stylelint-config-primer": "^8.2.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "browser-sync": "browser-sync start --server --files index.html styles.css",
     "sass": "node-sass styles.scss styles.css",
     "sass-watch": "node-sass --source-map-embed --watch styles.scss --recursive styles.css",
-    "dev": "npm-run-all --parallel sass sass-watch browser-sync"
-    
+    "dev": "npm-run-all --parallel sass sass-watch browser-sync",
+    "lint-css": "stylelint styles.css --syntax css",
+    "lint-scss": "stylelint styles.scss --syntax scss"
   },
   "repository": {
     "type": "git",
