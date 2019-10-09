@@ -20,44 +20,52 @@
             </ul>
         </div>
     </header>
+    <main>
       <h2>Vörur í körfu</h2>
-      <div class="vara">
-        <img class="vara__image" src="../img/Backpack.jpg" alt="Bakpoki">
-        <div class="vara__innihald">
-            <div class="vara__uppi">
-                <h2 class="vara__heiti">Bakpoki</h2>
-		        <p class="vara__lysing">Þú getur geymt allt sem þú þarft fyrir klifrið í þessum bakpoka.</p>
+      <div class="vorur">
+          <div class="vorur__row">
+              <div class="vorur__col">
+                  <div class="vara">
+                    <img class="vara__image" src="../img/Backpack.jpg" alt="Bakpoki">
+                    <div class="vara__innihald">
+                        <div class="vara__uppi">
+                            <h2 class="vara__heiti">Bakpoki</h2>
+	            	        <p class="vara__lysing">Þú getur geymt allt sem þú þarft fyrir klifrið í þessum bakpoka.</p>
+                        </div>
+                        <div class="vara__nidri">
+	            	        <p class="vara__verd">49.900 kr.-</p>
+	            	        <div class="vara__moguleikar">
+                                <p class="vara__fjoldi">Fjöldi:</p>
+                                <input class="vara__fjoldi--input" type="text" name="fjoldi" value="2">
+                                <button class="vara__takki"><img class="vara__takki--karfa" src="../img/cart.svg" alt="kerra"> Uppfæra</button>
+                                <button class="vara__takki"><img class="vara__takki--karfa" src="../img/cart.svg" alt="kerra"> Eyða úr körfu</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="vara__nidri">
-		        <p class="vara__verd">49.900 kr.-</p>
-		        <div class="vara__moguleikar">
-                    <p class="vara__fjoldi">Fjöldi:</p>
-                    <input class="vara__fjoldi--input" type="text" name="fjoldi" value="2">
-                    <button class="vara__takki"><img class="vara__takki--karfa" src="../img/cart.svg" alt="kerra"> Uppfæra</button>
-                    <button class="vara__takki"><img class="vara__takki--karfa" src="../img/cart.svg" alt="kerra"> Eyða úr körfu</button>
+            <div class="vorur__col">
+	            <div class="vara">
+                    <img class="vara__image" src="../img/chalkbag.jpg" alt="Kalkpoki">
+                    <div class="vara__innihald">
+                        <div class="vara__uppi">
+                            <h2 class="vara__heiti">Kalkpoki</h2>
+            		        <p class="vara__lysing">Kalkaðu hendurnar áður en þú verður kalkaður í hausnum.</p>
+                        </div>
+                        <div class="nidri">
+            		        <p class="vara__verd">4.900 kr.-</p>
+            		        <div class="vara__moguleikar">
+            		        	<p>Fjöldi:</p>
+            		        	<input type="text" name="fjoldi" value="4">
+            		        	<button>Uppfæra</button>
+            		        	<button>Eyða úr körfu</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-	</div>
-
-	<div class="vara">
-        <img class="vara__image" src="../img/chalkbag.jpg" alt="Kalkpoki">
-        <div class="vara__innihald">
-            <div class="vara__uppi">
-                <h2 class="vara__heiti">Kalkpoki</h2>
-		        <p class="vara__lysing">Kalkaðu hendurnar áður en þú verður kalkaður í hausnum.</p>
-            </div>
-            <div class="nidri">
-		        <p class="vara__verd">4.900 kr.-</p>
-		        <div class="vara__moguleikar">
-		        	<p>Fjöldi:</p>
-		        	<input type="text" name="fjoldi" value="4">
-		        	<button>Uppfæra</button>
-		        	<button>Eyða úr körfu</button>
-                </div>
-            </div>
-        </div>
-	</div>
+    </div>
 
 	<div>
 		<h2>Sendingarupplýsingar</h2>
@@ -106,7 +114,7 @@
 		</select>
 	</div>
 	<button>Kaupa</button>
-
+    </main>
     <footer>
         <div class="list__row">
          <div class="list__col">

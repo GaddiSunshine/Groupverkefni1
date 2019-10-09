@@ -3,6 +3,15 @@
     border-radius: 3px;
 }
 
+.vorur{
+    &__row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        font-family: "helvetica";
+        max-width: 1200px;
+    }
+}
 .vara{
     display: flex;
     
