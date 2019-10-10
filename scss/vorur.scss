@@ -1,0 +1,49 @@
+@mixin rounded{
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.vara{
+    display: flex;
+    
+    &__image{
+        max-width: 33.33%;
+        
+    }
+    
+    &__innihald{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    &__heiti{
+
+        margin-bottom: 10px;
+    }
+
+    &__verd{
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    &__magn{
+        display: flex;
+        
+    }
+    &__fjoldi--input{
+        @include rounded;
+        padding: 10px;
+        width: 20%;
+    }
+    &__takki{
+        @include rounded;
+        padding: 10px;
+        &--karfa{
+            max-height: 12px;
+        }
+    }
+
+}
+
