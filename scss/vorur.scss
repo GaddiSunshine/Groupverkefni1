@@ -4,6 +4,9 @@
 }
 
 .vorur{
+    display: flex;
+    justify-content: center;
+
     &__row{
         display: flex;
         flex-wrap: wrap;
@@ -16,7 +19,7 @@
     display: flex;
     
     &__image{
-        max-width: 33.33%;
+        width: 33.33%;
         
     }
     
