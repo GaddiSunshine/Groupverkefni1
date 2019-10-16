@@ -23,52 +23,76 @@
 </header>
 
     <main>
-        <div>
-            <div>
+        <div class="main__grid">
+            <div class="main__grid-1">
                 <h2>Námskeið</h2>
                 <p>Prílihúsið býður upp á fjölbreytt námskeið fyrir byrjendur og lengra komna. Námskeiðin eru kennd af engri annarri en Karítas Pétursdóttir. Fyrir fólk á öllum aldri. Skráðu þig núna!</p>
             </div>
-            <div>
+            <div class="main__grid-2">
                 <img src="../img/climbing-gym.jpg" alt="Mynd af Prílihúsinu">
             </div>
-            <div>
+            <div class="main__grid-3">
                 <h2>Almennar upplýsingar</h2>
-                <div>
-                    <label for="name">Nafn:</label>
-                    <input type="text" id="name" name="nafn">
-                </div>
-                <div>
-                    <label for="address">Heimilisfang:</label>
-                    <input type="text" id="address" name="heimilisfang">
-                </div>
-                <div>
-                    <label for="age">Aldur:</label>
-                    <input type="text" id="age" name="aldur">
-                </div>
-                <div>
-                    <label for="course">Námskeið:</label>
-                    <select name="námskeið" id="course">
-                        <option>V0 - V1</option>
-                        <option>V2 - V4</option>
-                        <option>V5 - V7</option>
-                        <option>Krakkanámskeið</option>
-                        <option>Fjallaklifur</option>
-                    </select>
+                <div class="main__grid-3-content">
+                    <div class="main__grid-3-row">
+                        <label for="name">Nafn:</label>
+                    </div>
+                        <div class="main__grid-3-col">
+                        <input type="text" id="name" name="nafn">
+                    </div>
+                    <div class="main__grid-3-row">
+                        <label for="address">Heimilisfang:</label>
+                    </div>
+                        <div class="main__grid-3-col">    
+                        <input type="text" id="address" name="heimilisfang">
+                    </div>
+                    <div class="main__grid-3-row">
+                        <label for="age">Aldur:</label>
+                    </div>
+                        <div class="main__grid-3-col">                            
+                        <input type="text" id="age" name="aldur">
+                    </div>
+                    <div class="main__grid-3-row">
+                        <label for="course">Námskeið:</label>
+                    </div>
+                        <div class="main__grid-3-col">                            
+                        <select name="námskeið" id="course">
+                            <option>V0 - V1</option>
+                            <option>V2 - V4</option>
+                            <option>V5 - V7</option>
+                            <option>Krakkanámskeið</option>
+                            <option>Fjallaklifur</option>
+                        </select>
+                    </div>
                 </div>
             </div>
-            <div>
+            <div class="main__grid-4">
                 <h2>Greiðsluupplýsingar</h2>
+                <div class="main__grid-4-content">
                 <div>
                     <label for="cardnumber">Kortanúmer:</label>
-                    <input type="text" id="cardnumber" name="kortanúmer">
                 </div>
+                    <div>
+                        <input type="text" id="cardnumber" name="kortanúmer">
+                    </div>
                 <div>
                     <label for="cardowner">Korthafi:</label>
-                    <input type="text" id="cardowner" name="korthafi">
                 </div>
                 <div>
+                    <input type="text" id="cardowner" name="korthafi">
+                </div>
+                
+            </div>
+            <div class="main__grid-4-content-2">
+
+                <div class="main__grid-4-content-2-row-1">
                     <label for="expiry__date">Gildistími:</label>
+                </div>
+                <div class="main__grid-4-content-2-col-2">
                     <label for="month">Mán</label>
+                </div>
+                <div class="main__grid-4-content-2-col-3">
+                    
                     <select name="mán" id="month">
                         <option>01</option>
                         <option>02</option>
@@ -83,7 +107,13 @@
                         <option>11</option>
                         <option>12</option>
                     </select>
+                </div>
+                <div class="main__grid-4-content-2-col-4">
+                    
                     <label for="year">Ár</label>
+                </div>
+                <div class="main__grid-4-content-2-col-5">
+                    
                     <select name="ár" id="year">
                         <option>2019</option>
                         <option>2020</option>
@@ -91,9 +121,14 @@
                         <option>2022</option>
                     </select>
                 </div>
+                
             </div>
-            <button class="blue__button">Skrá</button>
         </div>
+        
+    </div>
+    <button class="blue__button grid__button">Skrá</button>
+
+            
     </main>
 
     <footer>
