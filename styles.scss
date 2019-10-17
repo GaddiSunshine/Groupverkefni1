@@ -2,7 +2,7 @@
 
 * {
   padding: 0;
-  margin: 0;  
+  margin: 0;
 }
 
 *,
@@ -15,20 +15,13 @@ html { /* stylelint-disable-line */
   box-sizing: border-box;
   overflow-x: hidden;
   font-size: 16px;
-  
-
   // TODO fleiri grunn stillingar
 }
 
 main { /* stylelint-disable-line */
+  padding-right: 20px;
   padding-left: 20px;
-  padding-right: 20px
 }
-
-
-
-
-
 
 // TODO sækja allar sass skrár
 // @import "scss/...";
