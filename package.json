@@ -4,12 +4,13 @@
   "description": "hópverkefni",
   "main": "index.js",
   "dependencies": {
+    "@primer/css": "^13.1.0",
     "node-sass": "^4.12.0"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "npm-run-all": "^4.1.5",
-    "stylelint": "^11.0.0",
+    "stylelint": "^9.10.1",
     "stylelint-config-primer": "^8.2.1"
   },
   "scripts": {
@@ -19,7 +20,13 @@
     "sass-watch": "node-sass --source-map-embed --watch styles.scss --recursive styles.css",
     "dev": "npm-run-all --parallel sass sass-watch browser-sync",
     "lint-css": "stylelint styles.css --syntax css",
-    "lint-scss": "stylelint styles.scss --syntax scss"
+    "lint-scss": "stylelint styles.scss --syntax scss",
+    "lint-config": "stylelint scss/config.scss --syntax scss",
+    "lint-course": "stylelint scss/course.scss --syntax scss",
+    "lint-footer": "stylelint scss/footer.scss --syntax scss",
+    "lint-header": "stylelint scss/header.scss --syntax scss",
+    "lint-vorur": "stylelint scss/vorur.scss --syntax scss",
+    "lint-all": "npm-run-all --parallel lint-scss lint-vorur lint-footer lint-header lint-course"
   },
   "repository": {
     "type": "git",
