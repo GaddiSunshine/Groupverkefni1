@@ -1,0 +1,38 @@
+.index {
+  font-family: "Open Sans", serif;
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+  &__title {
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    font-size: 35px;;
+  }
+  &__description {
+    padding: 40px 0;
+  }
+}
+
+.index__grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.index__row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.index__col{
+  padding-left: 10px;
+  padding-right: 10px;
+}
