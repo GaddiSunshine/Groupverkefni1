@@ -5,31 +5,53 @@ $whiteText: #fffcf2;
 
 header {
     background-color: $headerColor;
-    &__row{
-        
-    }
+    
+    font-family: "Oswald", sans-serif;
+    
     
     h1{
         font-size: 3.75em;
         color: $blackText;
-        text-align: center;
-        padding-top: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 100px;
     }
     ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        
+        
+       
         list-style: none;
-        max-width: 1200px;
-        padding-bottom: 20px;
+        font-size:1.25em;
+        
     }
     a{
         text-decoration: none;
         color: $blackText;
         font-weight: bold;
     }
-    
-    
-    
+}
+.header__row__grid{
+    /*border:3px solid red; */
+    text-align:center;
+    &-nested{
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        grid-template-rows:1fr 1fr;
+        height:100%;
+        padding-bottom: 20px;
+        margin-top: 20px;
+        div {
+           /* border:1px solid darkblue; */
+        }
+        .header__row-cart{
+            grid-column:2/4;
+        }
+    }
+}
+.header__row{
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 60%;     
+    img {
+        height:15px;
+
+    } 
 }

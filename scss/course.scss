@@ -3,10 +3,7 @@ $footerColor: #00b7ff;
 $blackText: #000000;
 $whiteText: #fffcf2;
 
-img {
-    width: 100%;
-    height: 100%;
-}
+
 .main{
     display:flex;
     justify-content: center;
@@ -22,6 +19,10 @@ img {
     max-width:1200px;
     margin-left: 10px;
     margin-right: 10px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .main__grid > div {
