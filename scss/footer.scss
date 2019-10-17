@@ -6,18 +6,26 @@ $whiteText: #fffcf2;
 footer {
     background-color: $footerColor;
     padding: 20px 0;
+    
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
 
     .footer{
         &__row {
-            display: flex;
-            justify-content: space-around;
+            margin-left: 10vw;
+            display:flex;
+            justify-content: space-between;
+                       
             font-family: "helvetica";
             max-width: 1200px;
+            
             li {
                 list-style: none; 
                 color: $whiteText;
                 line-height: 2em;  
-                font-size:  0.75emx
+                font-size:  0.75em;
+                
               }
         }
 
@@ -26,6 +34,7 @@ footer {
             font-weight: bold;
             color: $blackText;
             font-size: 1em;
+            
         }   
     }
 
