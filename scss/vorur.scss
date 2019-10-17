@@ -1,94 +1,95 @@
-@mixin rounded{
-    border: 1px solid black;
-    border-radius: 3px;
+@mixin rounded {
+  border: 1px solid #000;
+  border-radius: 3px;
 }
 
-.vorur{
+.vorur {
+  display: flex;
+  justify-content: center;
+
+  &__row {
     display: flex;
-    justify-content: center;
-
-    &__row{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        font-family: "helvetica";
-        max-width: 1200px;
-    }
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    font-family: helvetica;
+  }
 }
-.vara{
+
+.vara {
+  display: flex;
+  flex-direction: column;
+
+  &__image {
+    width: 100%;
+  }
+
+  &__innihald {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &__uppi {
+    margin-bottom: 20px;
+  }
+
+  &__heiti {
+    margin-bottom: 10px;
+  }
+
+  &__verd {
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &__magn {
+    display: flex;
+  }
+
+  &__moguleikar {
     display: flex;
     flex-direction: column;
 
-    
-    &__image{
-        width: 100%;
-        
-    }
-    
-    &__innihald{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
+    &__vorur {
+      &__fjoldi--input {
+        width: 60%;
+        @include rounded;
+        padding: 10px;
+        margin-right: 10px;
+      }
 
-    &__uppi{
-        margin-bottom: 20px;
-    }
-    
-    &__heiti{
+      &__takki {
+        width: 30%;
+        @include rounded;
+        padding: 10px;
+        margin-right: 10px;
 
-        margin-bottom: 10px;
-    }
-
-    &__verd{
-        font-weight: bold;
-        font-size: 18px;
-        margin-bottom: 30px;
-    }
-
-    &__magn{
-        display: flex;
-        
-    }
-
-    &__moguleikar{
-        display: flex;
-        flex-direction: column;
-        &__vorur{
-            &__fjoldi--input{
-                @include rounded;
-                padding: 10px;
-                margin-right: 10px;
-                width: 60%;
-            }
-            &__takki{
-                @include rounded;
-                padding: 10px;
-                margin-right: 10px;
-                width: 30%;
-                &--karfa{
-                    max-height: 12px;
-                }
-            }
+        &--karfa {
+          max-height: 12px;
         }
-        &__karfa{
-            &__fjoldi--input{
-                @include rounded;
-                padding: 10px;
-                margin-right: 10px;
-                width: 25%;
-            }
-            &__takki{
-                @include rounded;
-                padding: 10px;
-                margin-right: 10px;
-                &--karfa{
-                    max-height: 12px;
-                }
-            }
-        }
+      }
     }
-    
 
+    &__karfa {
+      &__fjoldi--input {
+        width: 25%;
+        @include rounded;
+        padding: 10px;
+        margin-right: 10px;
+      }
+
+      &__takki {
+        @include rounded;
+        padding: 10px;
+        margin-right: 10px;
+
+        &--karfa {
+          max-height: 12px;
+        }
+
+      }
+    }
+  }
 }
-

@@ -1,41 +1,43 @@
 $headerColor: #ff5000;
 $footerColor: #00b7ff;
-$blackText: #000000;
+$blackText: #000;
 $whiteText: #fffcf2;
 
 footer {
-    background-color: $footerColor;
-    padding: 20px 0;
+  display: flex;
+  padding: 20px 0;
+  flex-direction: column;
+  background-color: $footerColor;
+  justify-content: center;
 
-    .footer{
-        &__row {
-            display: flex;
-            justify-content: space-around;
-            font-family: "helvetica";
-            max-width: 1200px;
-            li {
-                list-style: none; 
-                color: $whiteText;
-                line-height: 2em;  
-                font-size:  0.75emx
-              }
-        }
+  .footer {
+    &__row {
+      display: flex;
+      max-width: 1200px;
+      margin-left: 10vw;
+      justify-content: space-between;
+      font-family: helvetica;
 
-        &__title {
-            margin-bottom: 10px;
-            font-weight: bold;
-            color: $blackText;
-            font-size: 1em;
-        }   
+      li {
+        font-size: 0.75em;
+        line-height: 2em;
+        color: $whiteText;
+        list-style: none;
+      }
     }
 
-    .trademark {
-        margin-top: 10px;
-        text-align: center;
+    &__title {
+      margin-bottom: 10px;
+      font-size: 1em;
+      font-weight: bold;
+      color: $blackText;
     }
+
+  }
+
+  .trademark {
+    margin-top: 10px;
+    text-align: center;
+  }
 
 }
-
-
-
-
