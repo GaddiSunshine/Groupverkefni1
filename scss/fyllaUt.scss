@@ -1,0 +1,18 @@
+.uppl {
+    &__titill {
+        font-size: 20px;
+    }
+
+    &__skrifa {
+        display: flex;
+        flex-direction: column;
+        & > kortHafi {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}
+
+
+
+
