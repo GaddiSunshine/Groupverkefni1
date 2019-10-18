@@ -1,4 +1,7 @@
+@import "config.scss";
+
 .uppl {
+    
     &__titill {
         font-size: 20px;
     }
@@ -6,11 +9,43 @@
     &__skrifa {
         display: flex;
         flex-direction: column;
-        & > kortHafi {
+        justify-content: space-between;
+        & > .reitur {
             display: flex;
-            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            & > .kassi {
+                width: 66%;
+                @include rounded;
+            }
         }
+
+        
     }
+
+    &__velja {
+        display: flex;
+        justify-content: space-between;
+        width: 66%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        & > .dropDown {
+            @include rounded;
+        }
+        & > .stor {
+            width: 100%;;
+        }
+
+    }
+
+    &__gildi {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    
 }
 
 

@@ -86,16 +86,24 @@
         </div>
     </div>
 
+
 	<div class="uppl">
-		<h2>Sendingarupplýsingar</h2>
-		<label for="nafn">Nafn:</label>
-		<input type="text" name="nafn" id="nafn">
+		<h2 class="uppl__titill">Sendingarupplýsingar</h2>
+        <div class="uppl__skrifa">
+        <div class="reitur">
+            <label for="nafn">Nafn:</label>
+		    <input class="kassi" type="text" name="nafn" id="nafn">
+        </div>
+        <div class="reitur">
+	    	<label for="HF">Heimilisfang:</label>
+		    <input class="kassi" type="text" name="Heimilisfang" id="HF">
+        </div>
+        </div>
 
-		<label for="HF">Heimilisfang:</label>\
-		<input type="text" name="Heimilisfang" id="HF">
-
-		<label for="postNr">Póstnúmer:</label>
-		<select name="PostNumer" id="postNr">
+        <div class="uppl__gildi">
+        <label for="postNr">Póstnúmer:</label>
+        <div class="uppl__velja">
+		<select class="dropDown stor" name="PostNumer" id="postNr">
             <option>-Velja póstnúmer-</option>
             <option>101 Reykjavík</option>
             <option>103 Reykjavík</option>
@@ -278,26 +286,29 @@
             <option>881 Kirkjubæjarklaustri</option>
             <option>900 Vestmannaeyjum</option>
             <option>902 Vestmannaeyjum</option>
-		</select>
+        </select>
+        </div>
+    </div>
 	</div>
 
 	<div class="uppl">
         <h2 class="uppl__titill">Greiðsluupplýsingar</h2>
         <div class="uppl__skrifa">
-            <div class="kortaNr">
+            <div class="reitur">
 		        <label for="KN">Kortanúmer:</label>
-                <input type="text" id="KN">
+                <input class="kassi" type="text" id="KN">
             </div>
-            <div class="kortHafi">
+            <div class="reitur">
                 <label for="KH">Korthafi:</label>
-                <input type="text" id="KH">
+                <input class="kassi" type="text" id="KH">
             </div>
         </div>
-            <label for="gildisT">Gildistími:</label>
+        <div class="uppl__gildi">
+        <label for="gildisT">Gildistími:</label>
         
 	    <div class="uppl__velja" id="gildisT">
 		    <label for="maunudur">Mán</label>
-		        <select>
+		        <select class="dropDown">
 			    <option>01</option>
     			<option>02</option>
 	    		<option>03</option>
@@ -313,12 +324,14 @@
 		    </select>
 	        
 		    <label for="Ar">Ár</label>
-		    <select>
+		    <select class="dropDown">
 			    <option>2019</option>
 			    <option>2020</option>
 			    <option>2021</option>
 			    <option>2022</option>
 		    </select>
+        </div>
+        </div>
         </div>
   
 

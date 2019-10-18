@@ -7,3 +7,8 @@ $font : 16px;
 $gutter : 20px;
 $Oswald : 'Oswald', serif;
 $Open : 'Open Sans', serif;
+
+@mixin rounded {
+    border: 1px solid #000;
+    border-radius: 3px;
+  }
