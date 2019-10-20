@@ -1,4 +1,6 @@
 @import "config";
+
+
 .index {
   font-family: "Open Sans", serif;
 
@@ -9,10 +11,11 @@
     height: 100%;
 
     padding-top: 40px;
+    transition: $transition;
   }
 
   &__info {
-    
+    width: 100%;
   }
 
   &__img{
