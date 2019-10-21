@@ -1,6 +1,18 @@
 @import "config";
+<<<<<<< HEAD
 .index {
   font-family: $Open;
+=======
+
+main{
+  margin-bottom:20px;
+}
+.index {
+  font-family: "Open Sans", serif;
+  max-width:1200px;
+  
+
+>>>>>>> 4bc42d4c031c99a6190409f8e4dd9efa789bc86e
 
   &__card{
     display: flex;
@@ -12,6 +24,15 @@
     padding-top: 40px;
     transition: $transition;
   }
+
+  .col1{
+    text-align:left;
+
+  }
+  .row__2{
+    width:50%;
+  }
+
 
   &__info {
     width: 100%;
@@ -29,5 +50,11 @@
   }
   &__description {
     padding: 40px 0;
+  }
+}
+
+@media(max-width:635px){
+  .col2row1{
+    order: -1;
   }
 }

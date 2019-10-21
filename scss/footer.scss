@@ -14,14 +14,14 @@ footer {
     &__row {
       display: flex;
       max-width: 1200px;
-      margin-left: 10vw;
+      margin: 0 10vw;
       justify-content: space-between;
       font-family: helvetica;
 
       li {
         font-size: 0.75em;
         line-height: 2em;
-        color: $whiteText;
+        
         list-style: none;
       }
     }
@@ -38,6 +38,26 @@ footer {
   .trademark {
     margin-top: 10px;
     text-align: center;
+  }
+  a{
+    text-decoration:none;
+    color: $whiteText;
+  }
+  a:hover{
+    color: $blackText;
+  }
+}
+
+@media (max-width:599px){
+  .footer {
+    &__row {
+      flex-wrap:wrap;
+    }
+    &__col {
+      font-size:2em;
+      margin: 20px 0;
+    }
+    
   }
 
 }
