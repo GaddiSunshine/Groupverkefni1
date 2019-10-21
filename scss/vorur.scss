@@ -13,6 +13,22 @@
   }
 }
 
+@media(max-width:599px){
+  .vorur__col{
+    width:100%;
+  }
+}
+@media(min-width:600px){
+  .vorur__col{
+    width:50%;
+  }
+}
+@media(min-width:1200px){
+  .vorur__col{
+    width:33%;
+  }
+}
+
 .vara {
   display: flex;
   flex-direction: column;
