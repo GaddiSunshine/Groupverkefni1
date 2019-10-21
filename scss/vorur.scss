@@ -11,36 +11,35 @@
     max-width: 1200px;
     font-family: helvetica;
   }
+
+  &__col{
+    width: 100%;
+  }
 }
 
-@media(max-width:599px){
-  .vorur__col{
-    width:100%;
-  }
-}
-@media(min-width:600px){
-  .vorur__col{
-    width:50%;
-  }
-}
-@media(min-width:1200px){
-  .vorur__col{
-    width:33%;
-  }
-}
+
+
 
 .vara {
   display: flex;
   flex-direction: column;
+  @media(min-width: 700px){
+    flex-direction: row;
+  }
 
   &__image {
     width: 100%;
+    @media(min-width: 700px){
+      width: 33%;
+    }
   }
 
   &__innihald {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
   &__uppi {

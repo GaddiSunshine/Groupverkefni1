@@ -1,6 +1,19 @@
 @import "config.scss";
 
 .uppl {
+    &__row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__col{
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+        @media(min-width: 700px){
+            width: 50%;
+        }
+    }
     
     &__titill {
         font-size: 20px;
