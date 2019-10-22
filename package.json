@@ -26,6 +26,7 @@
     "lint-footer": "stylelint scss/footer.scss --syntax scss",
     "lint-header": "stylelint scss/header.scss --syntax scss",
     "lint-vorur": "stylelint scss/vorur.scss --syntax scss",
+    "lint-staff": "stylelint scss/staff.scss --syntax scss",
     "lint-all": "npm-run-all --parallel lint-scss lint-vorur lint-footer lint-header lint-course"
   },
   "repository": {
