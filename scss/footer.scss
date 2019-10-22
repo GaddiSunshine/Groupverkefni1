@@ -13,10 +13,12 @@ footer {
   .footer {
     &__row {
       display: flex;
-      max-width: 1200px;
+      max-width: 1100px;
       margin: 0 10vw;
       justify-content: space-between;
       font-family: helvetica;
+
+
 
       li {
         font-size: 0.75em;
