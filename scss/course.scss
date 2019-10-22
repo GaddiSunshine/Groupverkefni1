@@ -23,6 +23,8 @@
 &__box{
   margin-bottom:10px;
   width:80%;
+  @include rounded;
+  padding:10px;
 }
 
 &__img {
