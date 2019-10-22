@@ -1,20 +1,21 @@
 @import "config.scss";
 
 main{
-  margin-bottom:20px;
+  margin: $gutter;
 }
 .index {
-  font-family: "Open Sans", serif;
+  font-family: $Open;
   max-width:1200px;
   
   &__card{
-    padding-top: 20px;
+    padding: $gutter;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
     
-    transition: all 300ms ease-in-out 0s;
+    transition: all $transition;
   }
   .col1{
     text-align:left;
@@ -30,14 +31,14 @@ main{
   }
 
   &__title {
-    font-family: "Oswald", sans-serif;
+    font-family: $Oswald;
     font-weight: 600;
-    font-size: 35px;
+    font-size: 36px;
   }
   &__description {
     padding: 40px 0;
-    font-family: "Oswald", sans-serif;
-    font-size: 25px;
+    font-family: $Oswald;
+    font-size: 24px;
   }
 }
 

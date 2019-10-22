@@ -7,7 +7,7 @@ $font : 16px;
 $gutter : 20px;
 $Oswald : "Oswald", sans-serif;
 $Open : "Open Sans", serif;
-$transition: all 200ms ease-in-out 0s;
+$transition: 200ms ease-in-out 0s;
 
 @mixin rounded {
     border: 1px solid #000;
@@ -24,11 +24,11 @@ $transition: all 200ms ease-in-out 0s;
 
     border: 0 solid;
     border-radius: 3px;
-    transition: background-color 200ms ease-in-out 0s, color 200ms ease-in-out 0s;
+    transition: background-color $transition, color $transition;
   }
   .blue__button:hover{
     background-color: $headerColor;
     color: $footerColor;
 
-    transition: background-color 200ms ease-in-out 0s, color 200ms ease-in-out 0s;
+    transition: background-color $transition, color $transition;
   }
