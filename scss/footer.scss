@@ -1,65 +1,87 @@
-$headerColor: #ff5000;
-$footerColor: #00b7ff;
-$blackText: #000;
-$whiteText: #fffcf2;
+@import "scss/config.scss";
 
-footer {
-  display: flex;
+.footer__index {
+
   padding: 20px 0;
-  flex-direction: column;
+
   background-color: $footerColor;
-  justify-content: center;
+
 
   .footer {
     &__row {
       display: flex;
-      max-width: 1100px;
-      margin: 0 10vw;
+      max-width: 1200px;
       justify-content: space-between;
       font-family: helvetica;
 
 
 
-      li {
-        font-size: 0.75em;
-        line-height: 2em;
-        
-        list-style: none;
-      }
+     
+    }
+    &__list {
+      font-size: 1em;
+      line-height: 2em;
+      
+      list-style: none;
     }
 
     &__title {
-      margin-bottom: 10px;
-      font-size: 1em;
+      margin-top: $gutter;
+      margin-bottom: 0.5*$gutter;
+      font-size: 1.5em;
       font-weight: bold;
+      color: $blackText;
+    }
+    &__link{
+        text-decoration:none;
+        color: $whiteText;
+    }
+    &__link:hover{
       color: $blackText;
     }
 
   }
 
   .trademark {
-    margin-top: 10px;
+    margin-top: 0.5*$gutter;
     text-align: center;
-  }
-  a{
-    text-decoration:none;
-    color: $whiteText;
-  }
-  a:hover{
-    color: $blackText;
   }
 }
 
-@media (max-width:599px){
+
+@media (max-width:800px){
   .footer {
-    &__row {
-      flex-wrap:wrap;
+    &__row{
+      flex-direction: column;
     }
-    &__col {
-      font-size:2em;
-      margin: 20px 0;
+    &__combined{
+      display:flex;
+      justify-content: space-around;
+      margin-left:$gutter;
+      
+    }
+
+    &__col{
+      width:50%;
     }
     
   }
 
 }
+@media (min-width:1000px){
+  .footer {
+    &__row{
+      margin-left:auto;
+      margin-right:auto;
+    }
+    &__combined{
+      display: flex;
+      width: 50%;
+      justify-content: start;
+    }
+    &__col{
+      width:50%;
+    }
+  }
+}
+
