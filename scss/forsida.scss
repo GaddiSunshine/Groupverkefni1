@@ -1,39 +1,24 @@
-@import "config";
-<<<<<<< HEAD
-.index {
-  font-family: $Open;
-=======
+@import "config.scss";
 
 main{
   margin-bottom:20px;
 }
 .index {
-  font-family: "Open Sans", serif;
-  max-width:1200px;
+  font-family: $Open;
+  /*max-width:1200px;*/
   
-
->>>>>>> 4bc42d4c031c99a6190409f8e4dd9efa789bc86e
-
   &__card{
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
     
-
-    padding-top: 40px;
     transition: $transition;
   }
-
   .col1{
     text-align:left;
-
   }
-  .row__2{
-    width:50%;
-  }
-
-
   &__info {
     width: 100%;
   }
@@ -44,12 +29,13 @@ main{
   }
 
   &__title {
-    font-family: $Oswald;
+    font-family: "Oswald", sans-serif;
     font-weight: 600;
-    font-size: 35px;;
+    font-size: 35px;
   }
   &__description {
     padding: 40px 0;
+    font-family: $Oswald;
   }
 }
 
