@@ -37,6 +37,7 @@
             & > .kassi {
                 width: 66%;
                 @include rounded;
+                padding: 10px;
             }
         }
 
@@ -51,9 +52,11 @@
         margin-bottom: 10px;
         & > .dropDown {
             @include rounded;
+            padding: 10px;
         }
         & > .stor {
             width: 100%;;
+            
         }
 
     }
