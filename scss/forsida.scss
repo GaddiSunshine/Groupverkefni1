@@ -1,43 +1,41 @@
 @import "config.scss";
 
 main{
-  margin-bottom:20px;
+  margin-bottom: 2*$gutter;
+  margin-top: $gutter;
 }
 .index {
-  font-family: "Open Sans", serif;
+  font-family: $Open;
   max-width:1200px;
   
   &__card{
-    padding-top: 20px;
+    padding-top: $gutter;
+    padding-bottom: $gutter;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
     
-    transition: all 300ms ease-in-out 0s;
-  }
-  .col1{
-    text-align:left;
+    transition: all $transition;
   }
   &__info {
     width: 100%;
     height: 100%;
   }
-
   &__img{
     width: 100%;
-    height: 100%;
+    height: auto;
   }
-
   &__title {
-    font-family: "Oswald", sans-serif;
+    font-family: $Oswald;
     font-weight: 600;
-    font-size: 35px;
+    font-size: 36px;
   }
   &__description {
-    padding: 40px 0;
-    font-family: "Oswald", sans-serif;
-    font-size: 25px;
+    padding: 2*$gutter 0;
+    font-family: $Open;
+    font-size: 24px;
   }
 }
 

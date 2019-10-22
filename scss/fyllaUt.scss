@@ -22,7 +22,8 @@
     }
     
     &__titill {
-        font-size: 20px;
+        font-size: 36px;
+        font-family: $Oswald;
     }
 
     &__skrifa {
@@ -34,6 +35,11 @@
             justify-content: space-between;
             margin-top: 10px;
             margin-bottom: 10px;
+
+            & > .text {
+                font-family: $Open;
+            }
+
             & > .kassi {
                 width: 66%;
                 @include rounded;
@@ -58,12 +64,18 @@
             width: 100%;;
             
         }
+        & > .text {
+            font-family: $Open;
+        }
 
     }
 
     &__gildi {
         display: flex;
         justify-content: space-between;
+        & > .text {
+            font-family: $Open;
+        }
     }
 
 

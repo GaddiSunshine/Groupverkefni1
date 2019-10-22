@@ -1,19 +1,21 @@
 @import "config.scss";
 .staff {
+    &__card {
+        transition: all $transition; 
+    }
     &__about {
         display: flex;
-        margin-top: 20px;
+        margin-top: $gutter;
         align-items: center;
         width: 100%;
         transform-style: preserve-3d;
-        transition: all 200ms ease-in-out; 
     }
     &__card:hover &__about{
         transform: rotateY(180deg);
+        transition: all $transition; 
     }
     &__card:hover &__img{
         visibility: hidden;
-        transition: all 200ms ease-in-out; 
     }
     &__img{
         width: 100%;
@@ -22,7 +24,8 @@
         backface-visibility: hidden;
     }
     &__person{
-        font-family: "Open Sans", serif;
+        font-family: $Open;
+        font-size: 18px;
         position: absolute;
         display: block;
         width: 100%;
@@ -32,8 +35,9 @@
         transform: rotateY(180deg);
     }
     &__name {
-        font-family: "Oswald", sans-serif;
-        margin-bottom: 20px;
+        font-family: $Oswald;
+        font-size: 24px;
+        margin-bottom: $gutter;
     }
 }
 
