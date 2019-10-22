@@ -1,9 +1,14 @@
 @import "config.scss";
 
 .uppl {
+    display: flex;
+    justify-content: center;
+
     &__row{
         display: flex;
         flex-wrap: wrap;
+        width: 100%;
+        max-width: 1200px;
     }
 
     &__col{
@@ -11,7 +16,8 @@
         padding-right: 10px;
         width: 100%;
         @media(min-width: 700px){
-            width: 50%;
+            width: 41%;
+            margin-right: 9%;
         }
     }
     
