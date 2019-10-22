@@ -51,6 +51,10 @@
   height: 100%;
   
   
+  &__takkastaerd {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 
   &__image {
     width: 100%;
