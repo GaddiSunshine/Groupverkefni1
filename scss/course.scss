@@ -1,7 +1,4 @@
-$headerColor: #ff5000;
-$footerColor: #00b7ff;
-$blackText: #000;
-$whiteText: #fffcf2;
+@import "config.scss"; 
 
 .grid__button{
   position: relative;
@@ -12,13 +9,20 @@ $whiteText: #fffcf2;
 
 
 @media(max-width:599px){
-.main {
+.course {
   display: flex;
   justify-content: center;
+  
+  &__title {
+    font-family: $Oswald;
+
+  &__text{
+    font-family: $Open;
+  }
 
 }
 
-.main__grid {
+.course__grid {
   display: grid;
   max-width: 1200px;
   margin-top: 10px;
@@ -35,7 +39,7 @@ $whiteText: #fffcf2;
   }
 }
 
-.main__grid > div {
+.course__grid > div {
   h2 {
     margin-bottom: 20px;
   }
@@ -46,13 +50,13 @@ $whiteText: #fffcf2;
   }
 }
 
-.main__grid-1,
-.main__grid-3,
-.main__grid-4 {
+.course__grid-1,
+.course__grid-3,
+.course__grid-4 {
   padding: 10px;
 }
 
-.main__grid-3-content {
+.course__grid-3-content {
   display: grid;
   grid-template-columns: 33% 67%;
   justify-items: stretch;
@@ -69,7 +73,7 @@ $whiteText: #fffcf2;
 
 }
 
-.main__grid-4-content {
+.course__grid-4-content {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
 
@@ -122,14 +126,14 @@ $whiteText: #fffcf2;
 
 
 }
+}
 @media(min-width:600px){
-    .main {
-      display: flex;
-      justify-content: center;
-    
-    }
-    
-    .main__grid {
+  .course {
+    display: flex;
+    justify-content: center;
+  
+  }
+    .course__grid {
       display: grid;
       max-width: 1200px;
       margin-top: 10px;
@@ -144,93 +148,74 @@ $whiteText: #fffcf2;
         width: 100%;
         height: 100%;
       }
-    }
-    
-    .main__grid > div {
-      h2 {
-        margin-bottom: 20px;
-      }
-    
-      p,
-      label {
-        font-size: 0.75em;
-      }
-    }
-    
-    .main__grid-1,
-    .main__grid-3,
-    .main__grid-4 {
-      padding: 10px;
-    }
-    
-    .main__grid-3-content {
-      display: grid;
-      grid-template-columns: 33% 67%;
-      justify-items: stretch;
-     
-    
-      div {
-        margin-bottom: 10px;
-      }
-    
-      input,
-      select {
-        width: 100%;
-      }
-    
-    }
-    
-    .main__grid-4-content {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr)
+
+      &-4-content {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
       
-    
-      input {
-        width: 100%;
+        div {
+          margin-bottom: 10px;
+        }
+      
+        input {
+          width: 100%;
+        }
+        &-cardnumber{
+            grid-column:1;
+            grid-row:1;
+        }
+        &-cardnumber-input{
+          grid-column:3/7;
+          grid-row:1;
+        }
+        &-cardowner{
+          grid-column:1;
+          grid-row:2;
+        }
+        &-cardowner-input{
+          grid-column:3/7;
+          grid-row:2;
+        }
+        &-col-1{
+          grid-column:1;
+          grid-row:3;
+        }
+        &-col-2{
+          grid-column:3/4;
+          grid-row:3;
+        }
+        &-col-3{
+          grid-column:4/5;
+          grid-row:3;
+        }
+        &-col-4{
+          grid-column:5/6;
+          grid-row:3;
+        }
+        &-col-5{
+          grid-column:6/7;
+          grid-row:3;
+        }
+      
+        
       }
-     input{
-       width:100%;
-     }
-    &-cardnumber{
-        grid-column:1;
-        grid-row:1;
-    }
-    &-cardnumber-input{
-      grid-column:3/7;
-      grid-row:1;
-    }
-    &-cardowner{
-      grid-column:1;
-      grid-row:2;
-    }
-    &-cardowner-input{
-      grid-column:3/7;
-      grid-row:2;
-    }
-    &-col-1{
-      grid-column:1;
-      grid-row:3;
-    }
-    &-col-2{
-      grid-column:3/4;
-      grid-row:3;
-    }
-    &-col-3{
-      grid-column:4/5;
-      grid-row:3;
-    }
-    &-col-4{
-      grid-column:5/6;
-      grid-row:3;
-    }
-    &-col-5{
-      grid-column:6/7;
-      grid-row:3;
+      &-3-content {
+        display: grid;
+        grid-template-columns: 33% 67%;
+        justify-items: stretch;
+        
+      
+        div {
+          margin-bottom: 10px;
+        }
+      
+        input,
+        select {
+          width: 100%;
+        }
+      
+      }
     }
     }
-    
-    
-    
-    
-    }
+  
 
