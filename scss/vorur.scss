@@ -101,6 +101,11 @@
         @include rounded;
         padding: 10px;
         margin-right: 10px;
+        transition: background-color 200ms ease-in-out 0s, color 200ms ease-in-out 0s;
+
+        &:hover{
+          background-color: $footerColor;
+        }
 
         &--karfa {
           max-height: 12px;
@@ -120,6 +125,11 @@
         @include rounded;
         padding: 10px;
         margin-right: 10px;
+        transition: background-color 200ms ease-in-out 0s, color 200ms ease-in-out 0s;
+
+        &:hover{
+          background-color: $footerColor;
+        }
 
         &--karfa {
           max-height: 12px;
