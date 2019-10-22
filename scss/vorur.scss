@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     margin-top: 40px;
+    
   }
 
   &__col {
@@ -20,7 +21,8 @@
   }
 
   &__texti {
-    font-size: 3em;
+    font-size: 48px;
+    font-family: $Oswald;
   }
 }
 
@@ -33,7 +35,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     max-width: 1200px;
-    font-family: helvetica;
+    
   }
 
   &__col{
@@ -51,6 +53,10 @@
   height: 100%;
   
   
+  &__takkastaerd {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 
   &__image {
     width: 100%;
@@ -72,12 +78,19 @@
 
   &__heiti {
     margin-bottom: 10px;
+    font-family: $Oswald;
+    font-size: 48px;
+  }
+
+  &__lysing {
+    font-family: $Open;
   }
 
   &__verd {
     margin-bottom: 30px;
     font-size: 18px;
     font-weight: bold;
+    font-family: $Oswald;
   }
 
   &__magn {
@@ -89,6 +102,10 @@
     flex-direction: column;
 
     &__vorur {
+      &__fjoldi {
+        font-family: $Open;
+      }
+
       &__fjoldi--input {
         width: 60%;
         @include rounded;
@@ -114,6 +131,10 @@
     }
 
     &__karfa {
+      &__fjoldi {
+        font-family: $Open;
+      }
+
       &__fjoldi--input {
         width: 25%;
         @include rounded;
