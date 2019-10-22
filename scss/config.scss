@@ -5,8 +5,8 @@ $blackText: #000000;
 $whiteText: #fffcf2;
 $font : 16px;
 $gutter : 20px;
-$Oswald : 'Oswald', serif;
-$Open : 'Open Sans', serif;
+$Oswald : "Oswald", sans-serif;
+$Open : "Open Sans", serif;
 $transition: all 300ms ease-in-out 0s;
 
 @mixin rounded {
