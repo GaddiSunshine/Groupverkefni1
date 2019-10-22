@@ -13,16 +13,19 @@
 
   &__title{
   margin-bottom:20px;
-  font-family: 'Oswald', serif;
+  font-family: $Oswald;
   font-size:35px;
 }
 &__text{
-  font-family: 'Open Sans', serif;
+  font-family: $Open;
+  font-size:1.8em;
   
 }
 &__box{
   margin-bottom:10px;
   width:80%;
+  @include rounded;
+  padding:10px;
 }
 
 &__img {

@@ -3,6 +3,10 @@ $footerColor: #00b7ff;
 $blackText: #000000;
 $whiteText: #fffcf2;
 
+.header__link:hover{
+    color: $whiteText;
+}
+
 @media (max-width: 599px){
     header {
         background-color: $headerColor;
@@ -15,7 +19,7 @@ $whiteText: #fffcf2;
             }
             &__list{
                 list-style: none;
-                font-size:1.25em;
+                font-size:1em;
             }
             &__link{
                 text-decoration: none;
@@ -59,7 +63,7 @@ $whiteText: #fffcf2;
                 }
                 &__list{
                     list-style: none;
-                    font-size:1.25em;
+                    font-size:1em;
                 }
                 &__link{
                     text-decoration: none;
@@ -121,7 +125,7 @@ $whiteText: #fffcf2;
                 }
                 &__list{
                     list-style: none;
-                    font-size:1.25em;
+                    font-size:1em;
                 }
                 &__link{
                     text-decoration: none;
