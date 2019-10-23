@@ -41,7 +41,7 @@
   }
 }
 
-@media (max-width: $firstSwitch){
+@media (max-width: $beforeFirst){
   .footer {
     &__row{
       flex-direction: column;

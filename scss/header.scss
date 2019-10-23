@@ -4,7 +4,7 @@
     color: $whiteText;
 }
 
-@media (max-width: $firstSwitch){
+@media (max-width: $beforeFirst){
     header {
         background-color: $headerColor;
         font-family: "Oswald", sans-serif;
