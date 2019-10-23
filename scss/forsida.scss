@@ -39,19 +39,19 @@
   }
 }
 
-@media (max-width: 635px) {
+@media (max-width: $firstSwitch) {
   .col2row1 {
     order: -1;
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: $firstSwitch) {
   .index__card {
     padding-bottom: 2*$gutter;
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: $secondSwitch) {
   .index__card {
     padding-bottom: 0;
   }

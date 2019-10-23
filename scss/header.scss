@@ -4,7 +4,7 @@
     color: $whiteText;
 }
 
-@media (max-width: 599px){
+@media (max-width: $firstSwitch){
     header {
         background-color: $headerColor;
         font-family: "Oswald", sans-serif;
@@ -49,7 +49,7 @@
         }     
        }
     }
-    @media (min-width: 600px){
+    @media (min-width: $firstSwitch){
         header {
             background-color: $headerColor;
             font-family: "Oswald", sans-serif;
@@ -112,7 +112,7 @@
         }
         
     
-    @media (min-width: 1000px){
+    @media (min-width: $secondSwitch){
         header {
             background-color: $headerColor;
             font-family: "Oswald", sans-serif;

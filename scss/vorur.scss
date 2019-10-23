@@ -3,14 +3,15 @@
 .takki {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: $gutter;
+  margin-bottom: 2*$gutter;
 }
 
 .titill {
   &__row {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 2*$gutter;
     
   }
 
@@ -61,11 +62,11 @@
   }
 
   &__uppi {
-    margin-bottom: 20px;
+    margin-bottom: $gutter;
   }
 
   &__heiti {
-    margin-bottom: 10px;
+    margin-bottom: 0.5*$gutter;
     font-family: $Oswald;
     font-size: 36px;
   }
@@ -75,7 +76,7 @@
   }
 
   &__verd {
-    margin-bottom: 30px;
+    margin-bottom: 2*$gutter;
     font-size: 24px;
     font-weight: bold;
     font-family: $Oswald;
@@ -98,15 +99,15 @@
       &__fjoldi--input {
         width: 60%;
         @include rounded;
-        padding: 10px;
-        margin-right: 10px;
+        padding: 0.5*$gutter;
+        margin-right: 0.5*$gutter;
       }
 
       &__takki {
         width: 30%;
         @include rounded;
-        padding: 10px;
-        margin-right: 10px;
+        padding: 0.5*$gutter;
+        margin-right: 0.5*$gutter;
         transition: background-color 200ms ease-in-out 0s, color 200ms ease-in-out 0s;
 
         &:hover{
@@ -129,14 +130,14 @@
       &__fjoldi--input {
         width: 100px;
         @include rounded;
-        padding: 10px;
-        margin-right: 10px;
+        padding: 0.5*$gutter;
+        margin-right: 0.5*$gutter;
       }
 
       &__takki {
         @include rounded;
-        padding: 10px;
-        margin-right: 10px;
+        padding: 0.5*$gutter;
+        margin-right: 0.5*$gutter;
         transition: background-color 200ms ease-in-out 0s, color 200ms ease-in-out 0s;
 
         &:hover{
@@ -152,13 +153,13 @@
   }
 }
 
-@media(min-width: 640px){
+@media(min-width: $firstSwitch){
   .dir--row{
     flex-direction: row;
   }
 }
 
-@media(min-width: 1200px){
+@media(min-width: $secondSwitch){
   .padd--left10{
     padding-left: 0.5*$gutter;
   }

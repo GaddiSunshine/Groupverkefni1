@@ -49,7 +49,7 @@
 }
 
 
-@media (max-width:800px){
+@media (max-width: $firstSwitch){
   .footer {
     &__row{
       flex-direction: column;
@@ -68,7 +68,7 @@
   }
 
 }
-@media (min-width:1000px){
+@media (min-width:$secondSwitch){
   .footer {
     &__row{
       margin-left:auto;

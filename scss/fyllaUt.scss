@@ -12,13 +12,13 @@
     }
 
     &__col{
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 0.5*$gutter;
+        padding-right: 0.5*$gutter;
         width: 100%;
-        @media(min-width: 800px){
+        @media(min-width: $firstSwitch){
             width: 50%;
         }
-        @media(min-width: 1200px){
+        @media(min-width: $secondSwitch){
             width: 41%;
             margin-right: 9%;
         }
@@ -36,8 +36,8 @@
         & > .reitur {
             display: flex;
             justify-content: space-between;
-            margin-top: 10px;
-            margin-bottom: 10px;
+            margin-top: 0.5*$gutter;
+            margin-bottom: 0.5*$gutter;
 
             & > .text {
                 font-family: $Open;
@@ -47,7 +47,7 @@
             & > .kassi {
                 width: 66%;
                 @include rounded;
-                padding: 10px;
+                padding: 0.5*$gutter;
             }
         }
 
@@ -58,11 +58,11 @@
         display: flex;
         justify-content: space-between;
         width: 66%;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 0.5*$gutter;
+        margin-bottom: 0.5*$gutter;
         & > .dropDown {
             @include rounded;
-            padding: 10px;
+            padding: 0.5*$gutter;
             font-size: 18px;
         }
         & > .stor {

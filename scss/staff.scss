@@ -48,7 +48,7 @@
     }
 }
 
-@media (min-width: 500px) {
+@media (min-width: $firstSwitch) {
     .staff {
         padding-top: 0;
 

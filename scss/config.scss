@@ -8,6 +8,8 @@ $gutter : 20px;
 $Oswald : "Oswald", sans-serif;
 $Open : "Open Sans", serif;
 $transition: 200ms ease-in-out 0s;
+$firstSwitch: 800px;
+$secondSwitch: 1200px;
 
 @mixin rounded {
     border: 1px solid #000;

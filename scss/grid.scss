@@ -28,7 +28,7 @@
     margin-left: 33.333%; }
 .offset0 {
     margin-left: 0; }
-@media (min-width: 640px) {
+@media (min-width: $firstSwitch) {
     .col--Big1 {
       width: 100%; }
     .col--Big2 {
@@ -46,7 +46,7 @@
     .offset--Big6 {
       margin-left: 16.666%; } }
   
-  @media (min-width: 951px) {
+  @media (min-width: $secondSwitch) {
     .col--Bigger4 {
       width: 33.333%; }
     .col--Bigger5 {

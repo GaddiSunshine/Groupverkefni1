@@ -120,7 +120,7 @@
 
 }
 
-@media(max-width:599px){
+@media(max-width: $firstSwitch){
   .course{
     &__button{
       left:30vw;
@@ -134,7 +134,7 @@
   }
 }
 
-@media(min-width:600px){
+@media(min-width: $firstSwitch){
  
     .course{
       &__grid {
@@ -151,7 +151,7 @@
     }
   }
 
-@media(min-width:1000px){
+@media(min-width: $secondSwitch){
   .course__text{
     font-size:1.8em;
   }
