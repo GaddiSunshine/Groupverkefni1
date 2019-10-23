@@ -47,24 +47,24 @@
   grid-template-rows: repeat(4, 1fr);
   grid-auto-rows: 100px;
   grid-gap: 0.6em;
-  margin-right: 10px;
-  margin-left: 10px;
+  // margin-right: 10px;
+  // margin-left: 10px;
 
   
-&__grid{
-  &-1{
-    margin:10px;
-  }
-  &-2{
-    margin:10px;
-  }
-  &-3{
-    margin:10px;
-  }
-  &-4{
-    margin:10px;
-  }
-}
+// &__grid{
+//   &-1{
+//     margin:10px;
+//   }
+//   &-2{
+//     margin:10px;
+//   }
+//   &-3{
+//     margin:10px;
+//   }
+//   &-4{
+//     margin:10px;
+//   }
+// }
 }
 
 .course__grid-3-content {
@@ -155,7 +155,7 @@
 
 @media(min-width: $secondSwitch){
   .course__text{
-    font-size:1.8em;
+    font-size:1.5em;
   }
   .course__title{
     font-size:35px;
