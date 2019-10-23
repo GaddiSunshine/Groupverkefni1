@@ -31,6 +31,7 @@
 .vorur {
   display: flex;
   justify-content: center;
+  margin-top: 2*$gutter;
   &__row {
     @include maxWidth;
     width: 100%;
