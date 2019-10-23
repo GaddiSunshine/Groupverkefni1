@@ -28,7 +28,7 @@ $transition: 200ms ease-in-out 0s;
   }
   .blue__button:hover{
     background-color: $headerColor;
-    color: $footerColor;
+    color: $whiteText;
 
     transition: background-color $transition, color $transition;
   }

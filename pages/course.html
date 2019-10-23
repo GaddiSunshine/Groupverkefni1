@@ -67,7 +67,7 @@
                         <label class="course__text" for="age">Aldur:</label>
                     </div>
                         <div class="course__grid-3-col">                            
-                        <input class="course__box" type="text" id="age" name="aldur">
+                        <input class="course__box" type="number" id="age" name="aldur">
                     </div>
                     <div class="course__grid-3-row">
                         <label class="course__text" for="course">Námskeið:</label>
@@ -104,15 +104,15 @@
                     </div>
                     <div class="course__grid-4-content">
                         
-                        <div>
-                            <label class="course__text" for="expiry__date">Gildistími:</label>
+                        <div class="course__grid-4-content-col-1">
+                            <label class="course__text" for="expiry__date">Gildistími:     </label>
                         </div>
-                        <div>
+                        <div class="course__grid-4-content-col-2">
                             <label class="course__text" for="month"> Mán</label>
                         </div>
-                        <div>
+                        <div class="course__grid-4-content-col-3">
                             
-                            <select class="course__box" name="mán" id="month">
+                            <select class="course__box__full" name="mán" id="month">
                                 <option>01</option>
                                 <option>02</option>
                                 <option>03</option>
@@ -127,13 +127,13 @@
                                 <option>12</option>
                             </select>
                         </div>
-                        <div>
+                        <div class="course__grid-4-content-col-4">
                             
                             <label class="course__text" for="year">Ár</label>
                         </div>
-                        <div>
+                        <div class="course__grid-4-content-col-5">
                             
-                            <select class="course__box" name="ár" id="year">
+                            <select class="course__box__full" name="ár" id="year">
                                 <option>2019</option>
                                 <option>2020</option>
                                 <option>2021</option>
@@ -147,55 +147,63 @@
         
     </div>
 </div>
-    <button class="blue__button grid__button">Skrá</button>
+    <button class="blue__button course__button">Skrá</button>
 
             
     </main>
 
     <footer>
+        <div class="footer__index">
         <div class="footer__row">
+        <div class="footer__combined">
          <div class="footer__col">
              <p class="footer__title">Vöruflokkar</p>
-             <ul>
-                 <li><a href="../pages/products.html">Nauðsynjavörur</a></li>
-                 <li><a href="../pages/products.html">Frábærar vörur</a></li>
-                 <li><a href="../pages/products.html">Ómissandi vörur</a></li>
-                 <li><a href="../pages/products.html">Ótrúlegar vörur</a></li>
-                 <li><a href="../pages/products.html">Magnaðar vörur</a></li>
+             <ul class="footer__list">
+                 <li><a class="footer__link" href="../pages/products.html">Nauðsynjavörur</a></li>
+                 <li><a class="footer__link" href="../pages/products.html">Frábærar vörur</a></li>
+                 <li><a class="footer__link" href="../pages/products.html">Ómissandi vörur</a></li>
+                 <li><a class="footer__link" href="../pages/products.html">Ótrúlegar vörur</a></li>
+                 <li><a class="footer__link" href="../pages/products.html">Magnaðar vörur</a></li>
              </ul>
          </div>
+        
+         
          <div class="footer__col">
              <p class="footer__title">Vöruflokkar</p>
-             <ul>
-                 <li><a href="../pages/products.html">Trylltar vörur</a></li>
-                 <li><a href="../pages/products.html">Geggjaðar vörur</a></li>
-                 <li><a href="../pages/products.html">Svakalegar vörur</a></li>
-                 <li><a href="../pages/products.html">Fáránlegar vörur</a></li>
-                 <li><a href="../pages/products.html">Klikkaðar vörur</a></li>
+             <ul class="footer__list">
+                 <li><a class="footer__link" href="../pages/products.html">Trylltar vörur</a></li>
+                 <li><a class="footer__link" href="../pages/products.html">Geggjaðar vörur</a></li>
+                 <li><a class="footer__link" href="../pages/products.html">Svakalegar vörur</a></li>
+                 <li><a class="footer__link" href="../pages/products.html">Fáránlegar vörur</a></li>
+                 <li><a class="footer__link" href="../pages/products.html">Klikkaðar vörur</a></li>
              </ul>
          </div>
+        </div>
+        <div class="footer__combined">
          <div class="footer__col">
              <p class="footer__title">Námskeið</p>
-             <ul>
-                 <li><a href="../pages/course.html">V0 - V1 námskeið</a></li>
-                 <li><a href="../pages/course.html">V2 - V4 námskeið</a></li>
-                 <li><a href="../pages/course.html">V5 - V7 námskeið</a></li>
-                 <li><a href="../pages/course.html">Fjallaklifur námskeið</a></li>
+             <ul class="footer__list">
+                 <li><a class="footer__link" href="../pages/course.html">V0 - V1 námskeið</a></li>
+                 <li><a class="footer__link" href="../pages/course.html">V2 - V4 námskeið</a></li>
+                 <li><a class="footer__link" href="../pages/course.html">V5 - V7 námskeið</a></li>
+                 <li><a class="footer__link" href="../pages/course.html">Fjallaklifur námskeið</a></li>
              </ul>
          </div>
          <div class="footer__col">
              <p class="footer__title">Síður</p>
-             <ul>
-                 <li><a href="../pages/products.html">Allar vörur</a></li>
-                 <li><a href="../pages/staff.html">Starfsfólk</a></li>
-                 <li><a href="../pages/course.html">Námskeið</a></li>
-                 <li><a href="../pages/cart.html">Karfa</a></li>
+             <ul class="footer__list">
+                 <li><a class="footer__link" href="../pages/products.html">Allar vörur</a></li>
+                 <li><a class="footer__link" href="../pages/staff.html">Starfsfólk</a></li>
+                 <li><a class="footer__link" href="../pages/course.html">Námskeið</a></li>
+                 <li><a class="footer__link" href="../pages/cart.html">Karfa</a></li>
              </ul>
          </div>
+        </div>
         </div>
         <div>
             <p class="trademark">© 2019 Prílihúsið</p>
         </div>
+    </div>
      </footer>
   </body>
 </html>
