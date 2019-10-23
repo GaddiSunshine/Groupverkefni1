@@ -1,7 +1,6 @@
 @import "config.scss";
 
 .index {
-  @include maxWidth;
   padding-bottom: 2*$gutter;
   font-family: $Open;
 
@@ -9,10 +8,8 @@
     display: flex;
     height: 100%;
     padding-top: 2*$gutter;
-
     flex-direction: column;
     justify-content: center;
-
     transition: $transition;
   }
 

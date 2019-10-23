@@ -1,0 +1,75 @@
+@import "config.scss";
+
+.header__link:hover{
+    color: $whiteText;
+}
+header {
+    display: flex;
+    justify-content: center;
+    background-color: $headerColor;
+    font-family: "Oswald", sans-serif;
+    .header{
+        &__title{ 
+            @include font(8);
+            color: $blackText;
+            padding-top:10px;
+            margin-bottom: $gutter;
+        }
+        &__list{
+            display: flex;
+            list-style: none;
+            width: 100%;
+            justify-content: space-around;
+            margin-bottom: 0.5*$gutter;
+            @media(min-width: $firstSwitch){
+                width: 300px;
+                flex-wrap: wrap;
+            }
+            @media(min-width: $secondSwitch){
+                width: 500px;
+            }
+        }
+        &__link{
+            text-decoration: none;
+            color: $blackText;
+            font-weight: bold;
+            font-family: $Open;
+        }
+        &__img{
+            height:$gutter;
+        }
+        &__row {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            @include maxWidth;
+        }
+        &__links{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            @media(min-width: $firstSwitch){
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+        &__empty{
+            @media(min-width: $firstSwitch){
+                width: 100px;
+            }
+        }
+        &__cart > .header--item {
+            margin-bottom: 0.5*$gutter;
+            & > .header__link {
+                font-weight: normal;
+                // @include font(3);
+            }
+            @media(min-width: $firstSwitch){
+
+            
+            }
+            
+        }
+    }     
+   }
