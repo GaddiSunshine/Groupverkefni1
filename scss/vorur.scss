@@ -19,10 +19,11 @@
     justify-content: flex-start;
     width: 100%;
     max-width: 1200px;
+    margin-bottom: $gutter;
   }
 
   &__texti {
-    font-size: 48px;
+    font-size: 36px;
     font-family: $Oswald;
   }
 }
@@ -32,18 +33,15 @@
   justify-content: center;
   &__row {
     max-width: 1200px;
+    width: 100%;
   }
 }
-
-
-
 
 .vara {
   display: flex;
   flex-direction: column;
   height: 100%;
-  
-  
+  margin-bottom: 2*$gutter;
   
   &__takkastaerd {
     display: flex;
@@ -69,12 +67,11 @@
   &__heiti {
     margin-bottom: 10px;
     font-family: $Oswald;
-    font-size: 48px;
+    font-size: 36px;
   }
 
   &__lysing {
     font-family: $Open;
-    font-size: 21px;
   }
 
   &__verd {
@@ -150,7 +147,6 @@
         &--karfa {
           max-height: 12px;
         }
-
       }
     }
   }
@@ -159,5 +155,11 @@
 @media(min-width: 640px){
   .dir--row{
     flex-direction: row;
+  }
+}
+
+@media(min-width: 1200px){
+  .padd--left10{
+    padding-left: 0.5*$gutter;
   }
 }
