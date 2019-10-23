@@ -12,19 +12,18 @@
     display: flex;
     justify-content: center;
     margin-top: 2*$gutter;
-    
   }
 
   &__col {
     display: flex;
     justify-content: flex-start;
     width: 100%;
-    max-width: 1200px;
+    @include maxWidth;
     margin-bottom: $gutter;
   }
 
   &__texti {
-    font-size: 36px;
+    @include font6;
     font-family: $Oswald;
   }
 }
@@ -33,7 +32,7 @@
   display: flex;
   justify-content: center;
   &__row {
-    max-width: 1200px;
+    @include maxWidth;
     width: 100%;
   }
 }
@@ -42,7 +41,7 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  margin-bottom: 2*$gutter;
+  padding-bottom: 2*$gutter;
   
   &__takkastaerd {
     display: flex;
@@ -68,7 +67,7 @@
   &__heiti {
     margin-bottom: 0.5*$gutter;
     font-family: $Oswald;
-    font-size: 36px;
+    @include font6;
   }
 
   &__lysing {
@@ -77,7 +76,7 @@
 
   &__verd {
     margin-bottom: 2*$gutter;
-    font-size: 24px;
+    @include font5;
     font-weight: bold;
     font-family: $Oswald;
   }
@@ -93,7 +92,7 @@
     &__vorur {
       &__fjoldi {
         font-family: $Open;
-        font-size: 21px;
+        @include font4;
       }
 
       &__fjoldi--input {
@@ -124,7 +123,7 @@
     &__karfa {
       &__fjoldi {
         font-family: $Open;
-        font-size: 21px;
+        @include font4;
       }
 
       &__fjoldi--input {
@@ -160,7 +159,8 @@
 }
 
 @media(min-width: $secondSwitch){
-  .padd--left10{
+  .bigCart{
     padding-left: 0.5*$gutter;
+    height: auto;
   }
 }

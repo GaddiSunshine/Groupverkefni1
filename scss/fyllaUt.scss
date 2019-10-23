@@ -8,7 +8,7 @@
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        max-width: 1200px;
+        @include maxWidth;
     }
 
     &__col{
@@ -25,7 +25,7 @@
     }
     
     &__titill {
-        font-size: 36px;
+        @include font6;
         font-family: $Oswald;
     }
 
@@ -41,7 +41,7 @@
 
             & > .text {
                 font-family: $Open;
-                font-size: 18px;
+                @include font3;
             }
 
             & > .kassi {
@@ -63,7 +63,7 @@
         & > .dropDown {
             @include rounded;
             padding: 0.5*$gutter;
-            font-size: 18px;
+            @include font3;
         }
         & > .stor {
             width: 100%;;
@@ -71,7 +71,7 @@
         }
         & > .text {
             font-family: $Open;
-            font-size: 18px;
+            @include font3;
         }
 
     }
@@ -81,7 +81,7 @@
         justify-content: space-between;
         & > .text {
             font-family: $Open;
-            font-size: 18px;
+            @include font3;
         }
     }
 

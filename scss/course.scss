@@ -10,11 +10,11 @@
   margin-bottom:20px;
   font-family: $Oswald;
   font-size:25px;
-}
-&__text{
+  }
+  &__text{
   font-family: $Open;
   
-}
+  }
 &__box{
   margin-bottom:10px;
   width:80%;
@@ -39,7 +39,7 @@
 }
   &__grid {
   display: grid;
-  max-width: 1200px;
+  @include maxWidth;
   margin-top: 10px;
   grid-template-columns: 100%;
   grid-template-rows: repeat(4, 1fr);

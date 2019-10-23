@@ -1,7 +1,7 @@
 @import "config.scss";
 
 .index {
-  max-width: 1200px;
+  @include maxWidth;
   padding-bottom: 2*$gutter;
   font-family: $Open;
 
@@ -28,14 +28,14 @@
 
   &__title {
     font-family: $Oswald;
-    font-size: 2.25em;
+    @include font6;
     font-weight: 600;
   }
 
   &__description {
     padding: 2*$gutter 0;
     font-family: $Open;
-    font-size: 1.5em;
+    @include font5;
   }
 }
 

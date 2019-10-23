@@ -10,7 +10,7 @@
   .footer {
     &__row {
       display: flex;
-      max-width: 1200px;
+      @include maxWidth;
       justify-content: space-between;
       font-family: helvetica;
 
@@ -19,16 +19,14 @@
      
     }
     &__list {
-      font-size: 1em;
       line-height: 2em;
-      
       list-style: none;
     }
 
     &__title {
       margin-top: $gutter;
       margin-bottom: 0.5*$gutter;
-      font-size: 1.5em;
+      @include font5;
       font-weight: bold;
       color: $blackText;
     }
