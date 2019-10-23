@@ -131,7 +131,7 @@
       width:100%;
     }
     &__text{
-      font-size:1.5em;
+      @include font(5);
     }
   }
 }
@@ -144,7 +144,7 @@
       grid-template-rows: 50% 50%;
     }
     &__text{
-      font-size:1.5em;
+      @include font(5);
     }
       
       &__button{
@@ -155,10 +155,10 @@
 
 @media(min-width: $secondSwitch){
   .course__text{
-    font-size:1.5em;
+    @include font(5);
   }
   .course__title{
-    font-size:35px;
+    @include font(6);
   }
   .course__button{
     left:42vw;
