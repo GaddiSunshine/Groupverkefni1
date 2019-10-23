@@ -10,7 +10,7 @@
         font-family: "Oswald", sans-serif;
         .header{
             &__title{ 
-                @include font8;
+                @include font(8);
                 color: $blackText;
                 padding-top:10px;
             }
@@ -55,7 +55,7 @@
             font-family: "Oswald", sans-serif;
             .header{
                 &__title{ 
-                    @include font8;
+                    @include font(8);
                     color: $blackText;
                     padding-top:10px;
                 }
@@ -118,7 +118,7 @@
             font-family: "Oswald", sans-serif;
             .header{
                 &__title{ 
-                    @include font8;
+                    @include font(8);
                     color: $blackText;
                     padding-top:10px;
                 }

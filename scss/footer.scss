@@ -26,7 +26,7 @@
     &__title {
       margin-top: $gutter;
       margin-bottom: 0.5*$gutter;
-      @include font5;
+      @include font(5);
       font-weight: bold;
       color: $blackText;
     }

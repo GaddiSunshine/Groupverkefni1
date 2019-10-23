@@ -28,14 +28,14 @@
 
   &__title {
     font-family: $Oswald;
-    @include font6;
+    @include font(6);
     font-weight: 600;
   }
 
   &__description {
     padding: 2*$gutter 0;
     font-family: $Open;
-    @include font5;
+    @include font(5);
   }
 }
 

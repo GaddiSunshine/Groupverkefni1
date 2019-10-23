@@ -34,7 +34,7 @@
         display: block;
         width: 100%;
         font-family: $Open;
-        @include font3;
+        @include font(3);
         text-align: center;
         flex-direction: column;
         backface-visibility: hidden;
@@ -44,7 +44,7 @@
     &__name {
         margin-bottom: $gutter;
         font-family: $Oswald;
-        @include font5;
+        @include font(5);
     }
 }
 

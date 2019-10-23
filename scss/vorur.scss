@@ -23,7 +23,7 @@
   }
 
   &__texti {
-    @include font6;
+    @include font(6);
     font-family: $Oswald;
   }
 }
@@ -67,7 +67,7 @@
   &__heiti {
     margin-bottom: 0.5*$gutter;
     font-family: $Oswald;
-    @include font6;
+    @include font(6);
   }
 
   &__lysing {
@@ -76,7 +76,7 @@
 
   &__verd {
     margin-bottom: 2*$gutter;
-    @include font5;
+    @include font(5);
     font-weight: bold;
     font-family: $Oswald;
   }
@@ -92,7 +92,7 @@
     &__vorur {
       &__fjoldi {
         font-family: $Open;
-        @include font4;
+        @include font(4);
       }
 
       &__fjoldi--input {
@@ -123,7 +123,7 @@
     &__karfa {
       &__fjoldi {
         font-family: $Open;
-        @include font4;
+        @include font(4);
       }
 
       &__fjoldi--input {

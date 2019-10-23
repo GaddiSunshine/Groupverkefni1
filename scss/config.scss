@@ -11,30 +11,33 @@ $transition: 200ms ease-in-out 0s;
 $firstSwitch: 800px;
 $secondSwitch: 1200px;
 
-@mixin font1 {
-  font-size: 12px;
+@mixin font($nr) {
+  @if $nr == 1 {
+    font-size: 12px;
+  }
+  @if $nr == 2 {
+    font-size: 14px;
+  }
+  @if $nr == 3 {
+    font-size: 18px;
+  }
+  @if $nr == 4 {
+    font-size: 21px;
+  }
+  @if $nr == 5 {
+    font-size: 24px;
+  }
+  @if $nr == 6 {
+    font-size: 36px;
+  }
+  @if $nr == 7 {
+    font-size: 48px;
+  }
+  @if $nr == 8 {
+    font-size: 60px;
+  }
 }
-@mixin font2 {
-  font-size: 14px;
-}
-@mixin font3 {
-  font-size: 18px;
-}
-@mixin font4 {
-  font-size: 21px;
-}
-@mixin font5 {
-  font-size: 24px;
-}
-@mixin font6 {
-  font-size: 36px;
-}
-@mixin font7 {
-  font-size: 48px;
-}
-@mixin font8 {
-  font-size: 60px;
-}
+
 
 @mixin rounded {
     border: 1px solid #000;

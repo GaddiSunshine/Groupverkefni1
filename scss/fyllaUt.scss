@@ -25,7 +25,7 @@
     }
     
     &__titill {
-        @include font6;
+        @include font(6);
         font-family: $Oswald;
     }
 
@@ -41,7 +41,7 @@
 
             & > .text {
                 font-family: $Open;
-                @include font3;
+                @include font(3);
             }
 
             & > .kassi {
@@ -63,7 +63,7 @@
         & > .dropDown {
             @include rounded;
             padding: 0.5*$gutter;
-            @include font3;
+            @include font(3);
         }
         & > .stor {
             width: 100%;;
@@ -71,7 +71,7 @@
         }
         & > .text {
             font-family: $Open;
-            @include font3;
+            @include font(3);
         }
 
     }
@@ -81,7 +81,7 @@
         justify-content: space-between;
         & > .text {
             font-family: $Open;
-            @include font3;
+            @include font(3);
         }
     }
 
