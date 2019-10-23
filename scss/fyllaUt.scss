@@ -15,7 +15,10 @@
         padding-left: 10px;
         padding-right: 10px;
         width: 100%;
-        @media(min-width: 700px){
+        @media(min-width: 800px){
+            width: 50%;
+        }
+        @media(min-width: 1200px){
             width: 41%;
             margin-right: 9%;
         }
@@ -38,6 +41,7 @@
 
             & > .text {
                 font-family: $Open;
+                font-size: 18px;
             }
 
             & > .kassi {
@@ -59,6 +63,7 @@
         & > .dropDown {
             @include rounded;
             padding: 10px;
+            font-size: 18px;
         }
         & > .stor {
             width: 100%;;
@@ -66,6 +71,7 @@
         }
         & > .text {
             font-family: $Open;
+            font-size: 18px;
         }
 
     }
@@ -75,6 +81,7 @@
         justify-content: space-between;
         & > .text {
             font-family: $Open;
+            font-size: 18px;
         }
     }
 
