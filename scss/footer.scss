@@ -1,32 +1,32 @@
 @import "scss/config.scss";
 
 .footer__index {
-  padding: 20px 0;
-  background-color: $footerColor;
   display: flex;
-  align-items: center;
+  padding: 20px 0;
   flex-direction: column;
+  background-color: $footerColor;
+  align-items: center;
 
   .footer {
     &__row {
       display: flex;
+      width: 100%;
       max-width: 1240px;
       justify-content: space-between;
-      font-family: helvetica;
-      width: 100%;
-      padding-left: 0.5*$gutter;
       padding-right: 0.5*$gutter;
-      
+      padding-left: 0.5*$gutter;
+      font-family: helvetica;
+
       flex-direction: column;
-      @media(min-width: $secondSwitch){
+      @media (min-width: $secondSwitch) {
         flex-direction: row;
       }
-      @media (min-width:$secondSwitch){
+      @media (min-width: $secondSwitch) {
+        margin-right: -10px;
         margin-left: -10px;
-        margin-right:-10px;
 
       }
-      
+
     }
 
     &__list {
@@ -42,29 +42,28 @@
       color: $blackText;
     }
 
-    &__link{
-        text-decoration:none;
-        color: $whiteText;
+    &__link {
+      color: $whiteText;
+      text-decoration: none;
     }
 
-    &__link:hover{
+    &__link:hover {
       color: $blackText;
     }
 
-    &__combined{
-      display:flex;
+    &__combined {
+      display: flex;
       justify-content: space-around;
-      @media (min-width:$secondSwitch){
-        
-      width: 50%;
-      justify-content: start;
+      @media (min-width: $secondSwitch) {
+        width: 50%;
+        justify-content: start;
       }
     }
 
-    &__col{
-      width:50%;
-      margin-left: 0.5*$gutter;
+    &__col {
+      width: 50%;
       margin-right: 0.5*$gutter;
+      margin-left: 0.5*$gutter;
     }
   }
 
@@ -73,7 +72,3 @@
     text-align: center;
   }
 }
-
-
-
-
