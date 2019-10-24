@@ -3,6 +3,9 @@
 .footer__index {
   padding: 20px 0;
   background-color: $footerColor;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
   .footer {
     &__row {
@@ -10,6 +13,13 @@
       @include maxWidth;
       justify-content: space-between;
       font-family: helvetica;
+      width: 100%;
+      
+      flex-direction: column;
+      @media(min-width: $secondSwitch){
+        flex-direction: row;
+      }
+      
     }
 
     &__list {
@@ -33,6 +43,16 @@
     &__link:hover{
       color: $blackText;
     }
+
+    &__combined{
+      display:flex;
+      justify-content: space-around;
+      margin-left:0.5*$gutter;
+    }
+
+    &__col{
+      width:50%;
+    }
   }
 
   .trademark {
@@ -43,27 +63,28 @@
 
 @media (max-width: $beforeFirst){
   .footer {
-    &__row{
-      flex-direction: column;
-    }
+    // &__row{
+    //   flex-direction: column;
+    // }
 
-    &__combined{
-      display:flex;
-      justify-content: space-around;
-      margin-left:$gutter;
-    }
+    // &__combined{
+    //   display:flex;
+    //   justify-content: space-around;
+    //   margin-left:$gutter;
+    // }
 
-    &__col{
-      width:50%;
-    }
+    // &__col{
+    //   width:50%;
+    // }
   }
 }
 
 @media (min-width:$secondSwitch){
   .footer {
     &__row{
-      margin-left:auto;
-      margin-right:auto;
+      margin-left: -10px;
+      margin-right:-10px;
+      // flex-direction: row;
     }
 
     &__combined{

@@ -13,7 +13,7 @@ Uppsetning
 Við erum með fimm mismunandi html skrár sem eru síðurnar okkar. 
 index.html er forsíðan, cart.html er karfan, course.html er námskeiðin, products.html er vörur og staff.html er starfsfólk.
 
-styles.scss er aðal scss skráin okkar sem 'import'-ar öllum scss skrám úr scss möppunni.
+styles.scss er aðal scss skráin okkar sem 'import'-ar öllum scss skrám úr scss möppunni og grunnupplýsingum.
 í styles möppunni okkar eru níu .scss skrár, þær eru,
     config.scss
         þessi .scss skrá inniheldur allar breytur sem notaðar eru í hinum .scss skránum og er hún því "import"-uð efst í flestum hina .scss skránna.
