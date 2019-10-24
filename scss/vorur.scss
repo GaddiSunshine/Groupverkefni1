@@ -32,6 +32,7 @@
   display: flex;
   justify-content: center;
   margin-top: 2*$gutter;
+
   &__row {
     max-width: 1220px;
   }
@@ -39,10 +40,10 @@
 
 .vara {
   display: flex;
-  flex-direction: column;
   height: 100%;
   padding-bottom: 2*$gutter;
-  
+  flex-direction: column;
+
   &__takkastaerd {
     display: flex;
     flex-wrap: nowrap;
@@ -50,14 +51,13 @@
 
   &__image {
     width: 100%;
-    
   }
 
   &__innihald {
     display: flex;
+    height: 100%;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
   }
 
   &__uppi {
@@ -77,8 +77,8 @@
   &__verd {
     margin-bottom: 2*$gutter;
     @include font(5);
-    font-weight: bold;
     font-family: $Oswald;
+    font-weight: bold;
   }
 
   &__magn {
@@ -107,15 +107,15 @@
         @include rounded;
         padding: 0.5*$gutter;
         transition: background-color 200ms ease-in-out 0s, color 200ms ease-in-out 0s;
+      }
 
-        &:hover{
-          background-color: $footerColor;
-          border-color: $footerColor;
-        }
+      &__takki:hover {
+        background-color: $footerColor;
+        border-color: $footerColor;
+      }
 
-        &--karfa {
-          max-height: 12px;
-        }
+      &__takki--karfa {
+        max-height: 12px;
       }
     }
 
@@ -137,29 +137,29 @@
         padding: 0.5*$gutter;
         margin-right: 0.5*$gutter;
         transition: background-color 200ms ease-in-out 0s, color 200ms ease-in-out 0s;
+      }
 
-        &:hover{
-          background-color: $footerColor;
-          border-color: $footerColor;
-        }
+      &__takki:hover {
+        background-color: $footerColor;
+        border-color: $footerColor;
+      }
 
-        &--karfa {
-          max-height: 12px;
-        }
+      &__takki--karfa {
+        max-height: 12px;
       }
     }
   }
 }
 
-@media(min-width: $firstSwitch){
-  .dir--row{
+@media (min-width: $firstSwitch) {
+  .dir--row {
     flex-direction: row;
   }
 }
 
-@media(min-width: $secondSwitch){
-  .bigCart{
-    padding-left: 0.5*$gutter;
+@media (min-width: $secondSwitch) {
+  .bigCart {
     height: auto;
+    padding-left: 0.5*$gutter;
   }
 }
