@@ -10,7 +10,7 @@ $Open : "Open Sans", serif;
 $transition: 200ms ease-in-out 0s;
 $beforeFirst: 500px;
 $firstSwitch: 501px;
-$secondSwitch: 800px;
+$secondSwitch: 801px;
 
 @mixin font($nr) {
   @if $nr == 1 {
