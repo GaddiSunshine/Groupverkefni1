@@ -3,13 +3,30 @@
 .footer__index {
   padding: 20px 0;
   background-color: $footerColor;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
   .footer {
     &__row {
       display: flex;
-      @include maxWidth;
+      max-width: 1240px;
       justify-content: space-between;
       font-family: helvetica;
+      width: 100%;
+      padding-left: 0.5*$gutter;
+      padding-right: 0.5*$gutter;
+      
+      flex-direction: column;
+      @media(min-width: $secondSwitch){
+        flex-direction: row;
+      }
+      @media (min-width:$secondSwitch){
+        margin-left: -10px;
+        margin-right:-10px;
+
+      }
+      
     }
 
     &__list {
@@ -33,6 +50,22 @@
     &__link:hover{
       color: $blackText;
     }
+
+    &__combined{
+      display:flex;
+      justify-content: space-around;
+      @media (min-width:$secondSwitch){
+        
+      width: 50%;
+      justify-content: start;
+      }
+    }
+
+    &__col{
+      width:50%;
+      margin-left: 0.5*$gutter;
+      margin-right: 0.5*$gutter;
+    }
   }
 
   .trademark {
@@ -41,42 +74,6 @@
   }
 }
 
-@media (max-width: $secondSwitch){
-  .footer {
-    &__row{
-      flex-direction: column;
-    }
 
-    &__combined{
-      display:flex;
-      justify-content: space-around;
-      margin-left:$gutter;
-    }
 
-    &__col{
-      width:50%;
-    }
-  }
-}
-
-@media (min-width:$secondSwitch){
-  .footer {
-    &__row{
-      margin-left:auto;
-      margin-right:auto;
-    }
-
-    &__combined{
-      display: flex;
-      width: 50%;
-      justify-content: start;
-      margin-left:5px;
-      margin-right:-15px;
-    }
-    
-    &__col{
-      width:50%;
-    }
-  }
-}
 

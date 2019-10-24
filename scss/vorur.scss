@@ -33,8 +33,7 @@
   justify-content: center;
   margin-top: 2*$gutter;
   &__row {
-    @include maxWidth;
-    width: 100%;
+    max-width: 1220px;
   }
 }
 
@@ -97,17 +96,16 @@
       }
 
       &__fjoldi--input {
-        width: 60%;
+        width: 66%;
         @include rounded;
         padding: 0.5*$gutter;
         margin-right: 0.5*$gutter;
       }
 
       &__takki {
-        width: 30%;
+        width: 33%;
         @include rounded;
         padding: 0.5*$gutter;
-        margin-right: 0.5*$gutter;
         transition: background-color 200ms ease-in-out 0s, color 200ms ease-in-out 0s;
 
         &:hover{

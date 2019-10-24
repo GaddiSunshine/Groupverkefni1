@@ -36,7 +36,7 @@
   }
 }
 
-@media (max-width: $firstSwitch) {
+@media (max-width: $beforeFirst) {
   .col2row1 {
     order: -1;
   }
