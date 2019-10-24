@@ -1,94 +1,90 @@
 @import "config.scss";
 
 .uppl {
+  display: flex;
+  justify-content: center;
+
+  &__row {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    @include maxWidth;
+  }
 
-    &__row{
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        @include maxWidth;
+  &__col {
+    width: 100%;
+    padding-right: 0.5*$gutter;
+    padding-left: 0.5*$gutter;
+    @media (min-width: $firstSwitch) {
+      width: 50%;
     }
-
-    &__col{
-        padding-left: 0.5*$gutter;
-        padding-right: 0.5*$gutter;
-        width: 100%;
-        @media(min-width: $firstSwitch){
-            width: 50%;
-        }
-        @media(min-width: $secondSwitch){
-            width: 41%;
-            margin-right: 9%;
-        }
+    @media (min-width: $secondSwitch) {
+      width: 41%;
+      margin-right: 9%;
     }
-    
-    &__titill {
-        @include font(6);
-        font-family: $Oswald;
-    }
+  }
 
-    &__skrifa {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        & > .reitur {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 0.5*$gutter;
-            margin-bottom: 0.5*$gutter;
+  &__titill {
+    @include font(6);
+    font-family: $Oswald;
+  }
 
-            & > .text {
-                font-family: $Open;
-                @include font(3);
-            }
+  &__skrifa {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-            & > .kassi {
-                width: 66%;
-                @include rounded;
-                padding: 0.5*$gutter;
-            }
-        }
+    .reitur {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 0.5*$gutter;
+      margin-bottom: 0.5*$gutter;
 
-        
-    }
+      .text {
+        font-family: $Open;
+        @include font(3);
+      }
 
-    &__velja {
-        display: flex;
-        justify-content: space-between;
+      .kassi {
         width: 66%;
-        margin-top: 0.5*$gutter;
-        margin-bottom: 0.5*$gutter;
-        & > .dropDown {
-            @include rounded;
-            padding: 0.5*$gutter;
-            @include font(3);
-        }
-        & > .stor {
-            width: 100%;;
-            
-        }
-        & > .text {
-            font-family: $Open;
-            @include font(3);
-        }
-
+        @include rounded;
+        padding: 0.5*$gutter;
+      }
     }
 
-    &__gildi {
-        display: flex;
-        justify-content: space-between;
-        & > .text {
-            font-family: $Open;
-            @include font(3);
-        }
+  }
+
+  &__velja {
+    display: flex;
+    justify-content: space-between;
+    width: 66%;
+    margin-top: 0.5*$gutter;
+    margin-bottom: 0.5*$gutter;
+
+    .dropDown {
+      @include rounded;
+      padding: 0.5*$gutter;
+      @include font(3);
     }
 
+    .stor {
+      width: 100%;
+    }
 
-    
+    .text {
+      font-family: $Open;
+      @include font(3);
+    }
+  }
+
+  &__gildi {
+    display: flex;
+    justify-content: space-between;
+
+    .text {
+      font-family: $Open;
+      @include font(3);
+    }
+  }
+
 }
-
-
-
-
