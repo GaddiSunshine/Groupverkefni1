@@ -1,75 +1,84 @@
 @import "config.scss";
 
-.header__link:hover{
-    color: $whiteText;
+.header__link:hover {
+  color: $whiteText;
 }
-header {
-    display: flex;
-    justify-content: center;
-    background-color: $headerColor;
-    font-family: "Oswald", sans-serif;
-    .header{
-        &__title{ 
-            @include font(8);
-            color: $blackText;
-            padding-top:10px;
-            margin-bottom: $gutter;
-        }
-        &__list{
-            display: flex;
-            list-style: none;
-            width: 100%;
-            justify-content: space-around;
-            margin-bottom: 0.5*$gutter;
-            @media(min-width: $firstSwitch){
-                width: 300px;
-                flex-wrap: wrap;
-            }
-            @media(min-width: $secondSwitch){
-                width: 500px;
-            }
-        }
-        &__link{
-            text-decoration: none;
-            color: $blackText;
-            font-weight: bold;
-            font-family: $Open;
-        }
-        &__img{
-            height:$gutter;
-        }
-        &__row {
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            @include maxWidth;
-        }
-        &__links{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            @media(min-width: $firstSwitch){
-                flex-direction: row;
-                justify-content: space-between;
-            }
-        }
-        &__empty{
-            @media(min-width: $firstSwitch){
-                width: 100px;
-            }
-        }
-        &__cart > .header--item {
-            margin-bottom: 0.5*$gutter;
-            & > .header__link {
-                font-weight: normal;
-                // @include font(3);
-            }
-            @media(min-width: $firstSwitch){
 
-            
-            }
-            
-        }
-    }     
-   }
+.header__row {
+  display: flex;
+  justify-content: center;
+  font-family: Oswald, sans-serif;
+  background-color: $headerColor;
+
+  .header {
+    &__title {
+      @include font(8);
+      padding-top: 10px;
+      margin-bottom: $gutter;
+      color: $blackText;
+    }
+
+    &__list {
+      display: flex;
+      width: 100%;
+      margin-bottom: 0.5*$gutter;
+      list-style: none;
+      justify-content: space-around;
+
+      @media (min-width: $firstSwitch) {
+        width: 300px;
+        flex-wrap: wrap;
+      }
+
+      @media (min-width: $secondSwitch) {
+        width: 500px;
+      }
+    }
+
+    &__link {
+      font-family: $Open;
+      font-weight: bold;
+      color: $blackText;
+      text-decoration: none;
+    }
+
+    &__img {
+      height: $gutter;
+    }
+
+    &__row {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      @include maxWidth;
+    }
+
+    &__links {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      @media (min-width: $firstSwitch) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
+    &__empty {
+      @media (min-width: $firstSwitch) {
+        width: 100px;
+      }
+    }
+
+    &__cart > .header--item {
+      margin-bottom: 0.5*$gutter;
+
+      > .header__link {
+        font-weight: normal;
+      }
+
+    }
+
+  }
+
+}
