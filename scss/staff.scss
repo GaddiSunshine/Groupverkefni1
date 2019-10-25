@@ -1,59 +1,60 @@
 @import "config.scss";
 
 .staff {
-    padding-top: $gutter;
-    padding-bottom: 3*$gutter;
+  padding-top: $gutter;
+  padding-bottom: 3*$gutter;
 
-    &__about {
-        display: flex;
-        width: 100%;
-        margin-top: $gutter;
-        align-items: center;
-        transform-style: preserve-3d;
-        transition: $transition;
-    }
+  &__about {
+    display: flex;
+    width: 100%;
+    margin-top: $gutter;
+    align-items: center;
+    transform-style: preserve-3d;
+    transition: $transition;
+  }
 
-    &__card:hover &__about {
-        transform: rotateY(180deg);
-    }
+  &__card:hover &__about {
+    transform: rotateY(180deg);
+  }
 
-    &__card:hover &__img {
-        visibility: hidden;
-    }
+  &__card:hover &__img {
+    visibility: hidden;
+  }
 
-    &__img {
-        width: 100%;
-        height: 100%;
+  &__img {
+    width: 100%;
+    height: 100%;
 
-        backface-visibility: hidden;
-        transition: $transition;
-    }
+    backface-visibility: hidden;
+    transition: $transition;
+  }
 
-    &__person {
-        position: absolute;
-        display: block;
-        width: 100%;
-        font-family: $Open;
-        @include font(3);
-        text-align: center;
-        flex-direction: column;
-        backface-visibility: hidden;
-        transform: rotateY(180deg);
-    }
+  &__person {
+    position: absolute;
+    display: block;
+    width: 100%;
+    font-family: $Open;
+    @include font(3);
+    text-align: center;
+    flex-direction: column;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+  }
 
-    &__name {
-        margin-bottom: $gutter;
-        font-family: $Oswald;
-        @include font(5);
-    }
+  &__name {
+    margin-bottom: $gutter;
+    font-family: $Oswald;
+    @include font(5);
+  }
+
 }
 
 @media (min-width: $firstSwitch) {
-    .staff {
-        padding-top: 0;
+  .staff {
+    padding-top: 0;
 
-        &__card {
-            padding-top: $gutter;
-        }
+    &__card {
+      padding-top: $gutter;
     }
+  }
 }
