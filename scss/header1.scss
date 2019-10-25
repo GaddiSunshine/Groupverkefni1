@@ -6,8 +6,9 @@
 
 .header__row {
   display: flex;
-  justify-content: center;
   font-family: Oswald, sans-serif;
+  flex-direction: column;
+  align-items: center;
   background-color: $headerColor;
 
   .header {
@@ -48,8 +49,8 @@
 
     &__row {
       width: 100%;
+      flex-wrap: nowrap;
       flex-direction: column;
-      align-items: center;
       @include maxWidth;
     }
 
@@ -58,6 +59,7 @@
       width: 100%;
       flex-direction: column;
       align-items: center;
+      @include maxWidth;
       @media (min-width: $firstSwitch) {
         flex-direction: row;
         justify-content: space-between;
