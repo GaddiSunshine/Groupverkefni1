@@ -1,57 +1,96 @@
 @import "scss/config";
 
 .grid {
-    @include maxWidth;
-    margin: 0 auto;
-    }
+  @include maxWidth;
+  margin: 0 auto;
+}
+
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -10px;
-    margin-right: -10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-left: -10px;
 }
+
 .col {
-    padding-left: 10px;
-    padding-right: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
+
 .col1 {
-    width: 100%; }
+  width: 100%;
+}
+
 .col3 {
-    width: 50%; }
+  width: 50%;
+}
+
 .col4 {
-    width: 33.333%; }
+  width: 33.333%;
+}
+
 .col5 {
-    width: 25%; }
+  width: 25%;
+}
+
 .offset3 {
-    margin-left: 50%; }
+  margin-left: 50%;
+}
+
 .offset4 {
-    margin-left: 33.333%; }
+  margin-left: 33.333%;
+}
+
 .offset0 {
-    margin-left: 0; }
+  margin-left: 0;
+}
+
 @media (min-width: $firstSwitch) {
-    .col--Big1 {
-      width: 100%; }
-    .col--Big2 {
-      width: 66.666%; }
-    .col--Big3 {
-      width: 50%; }
-    .col--Big4 {
-      width: 33.333%; }
-    .col--Big5 {
-      width: 25%; }
-    .col--Big6 {
-      width: 16.666%; }
-    .offset--Big4 {
-      margin-left: 33.33%; }
-    .offset--Big6 {
-      margin-left: 16.666%; } }
-  
-  @media (min-width: $secondSwitch) {
-    .col--Bigger4 {
-      width: 33.333%; }
-    .col--Bigger5 {
-      width: 25%; }
-    .offset--Bigger6 {
-      margin-left: 16.666%; } }
+  .col--Big1 {
+    width: 100%;
+  }
 
+  .col--Big2 {
+    width: 66.666%;
+  }
 
+  .col--Big3 {
+    width: 50%;
+  }
+
+  .col--Big4 {
+    width: 33.333%;
+  }
+
+  .col--Big5 {
+    width: 25%;
+  }
+
+  .col--Big6 {
+    width: 16.666%;
+  }
+
+  .offset--Big4 {
+    margin-left: 33.33%;
+  }
+
+  .offset--Big6 {
+    margin-left: 16.666%;
+  }
+
+}
+
+@media (min-width: $secondSwitch) {
+  .col--Bigger4 {
+    width: 33.333%;
+  }
+
+  .col--Bigger5 {
+    width: 25%;
+  }
+
+  .offset--Bigger6 {
+    margin-left: 16.666%;
+  }
+
+}
