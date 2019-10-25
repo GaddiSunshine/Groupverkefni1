@@ -70,10 +70,12 @@
       }
     }
 
-    &__cart > .header--item {
-      margin-bottom: 0.5*$gutter;
+    &__cart {
+      .header--item {
+        margin-bottom: 0.5*$gutter;
+      }
 
-      > .header__link {
+      .header__link {
         font-weight: normal;
       }
 
